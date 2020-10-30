@@ -4,8 +4,29 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/test.css" />
     </head>
     <body>
-        <!-- content -->
+        <div class="slide title" id="container">
+            <div id="question">
+                <div id="ques_no">문제 1</div>
+                <div id="ques_desc">문제는 이렇게 나옵니다</div>
+            </div>
+            <form id="answer" onsubmit="return false;">
+                <div>
+                    <input type="radio" name="value" value="0" id="value_0" checked /><input type="radio" name="value" value="1" id="value_1" /><input type="radio" name="value" value="2" id="value_2" /><input type="radio" name="value" value="3" id="value_3" />
+                </div>
+                <div>
+                    <label for="value_0">값 0</label>
+                    <label for="value_1">값 1</label>
+                    <label for="value_2">값 2</label>
+                    <label for="value_3">값 3</label>
+                </div>
+                <div id="buttons">
+                    <button id="prev_button">← 이전</button>
+                    <button id="next_button">다음 →</button>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
