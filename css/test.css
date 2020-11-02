@@ -74,11 +74,11 @@ body {
 }
 
 #prev_button {
-    border-color: #ff4444 !important;
-    background: #ff8585;
+    border-color: #888 !important;
+    background: #ddd;
 }
 
 #next_button {
-    border-color: #00ff00 !important;
-    background: #80ff80;
+    border-color: lightskyblue !important;
+    background: white;
 }

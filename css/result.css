@@ -1,0 +1,23 @@
+#help div {
+    border: 3px solid white;
+    padding: 2em;
+    text-align: center;
+}
+
+#help h2 {
+    margin: 0;
+}
+
+#help ul {
+    margin: 0.5em 0;
+    list-style: none;
+    padding: 0;
+}
+
+#help ul li {
+    display: block;
+}
+
+#help a {
+    margin-top: 1em;
+}
