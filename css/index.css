@@ -14,3 +14,7 @@ body {
 #goTest {
     text-align: center;
 }
+
+#graph {
+    height: 50vh;
+}
