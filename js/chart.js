@@ -20,16 +20,43 @@ var config = {
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: '연도'
+                    labelString: '연도',
+                    padding: 0,
+                    fontColor: '#fff',
+                    fontStyle: 'bold'
+                },
+                gridLines: {
+                    color: "rgba(255, 255, 255, 0.1)",
+                    drawTicks: false
+                },
+                ticks: {
+                    padding: 10,
+                    fontColor: '#ccc'
                 }
             }],
             yAxes: [{
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: '치료환자(명)'
+                    labelString: '치료환자(명)',
+                    fontColor: '#fff',
+                    fontStyle: 'bold'
+                },
+                gridLines: {
+                    color: "rgba(255, 255, 255, 0.1)",
+                    drawTicks: false
+                },
+                ticks: {
+                    padding: 5,
+                    fontColor: '#ccc'
                 }
             }]
+        },
+        legend: {
+            labels: {
+                fontColor: '#fff',
+                fontStyle: 'bold'
+            }
         }
     }
 };
