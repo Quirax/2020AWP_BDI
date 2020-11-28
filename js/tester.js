@@ -6,23 +6,30 @@ onLoad(function() {
     $.getJSON("data/test.json", function(data) {
         $("#prev_button").click(function() {
             score.pop();
-            console.log(score);
+
             $("#next_button").text("다음 →");
             if (no == 1) $("#prev_button").hide();
             refreshView("질문 " + ((--no) + 1), data.questions[no].title);
         });
         $("#next_button").click(function() {
             $("#prev_button").show();
+
             s = parseInt($("input[name='value']:checked").val());
             if (data.questions[no].isReverse) s = (data.options.length - 1) - s;
             score.push(s);
-            console.log(score);
+
             if (no == data.questions.length - 2) $("#next_button").text("결과 보기");
             else if (no == data.questions.length - 1) {
                 for(i = 0; i < score.length; i++) sum += score[i];
-                location.href = "result.html";
+
+                for(i = 0; i < data.results.length; i++) {
+                    if(sum <= data.results[i].bound) break;
+                }
+                
+                location.href = "result.html#" + i;
                 return;
             } else $("#next_button").text("다음 →");
+
             refreshView("질문 " + ((++no) + 1), data.questions[no].title);
         });
         
